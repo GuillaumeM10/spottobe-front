@@ -12,11 +12,11 @@ $primary: #7D92D7;
       margin-bottom: 5px;
 
       &:not(.points-icon, .parcourir-icon) path {
-        fill: $primary;
+        fill: black;
       }
 
       &.parcourir-icon path {
-        stroke: $primary;
+        stroke: black;
       }
     }
 

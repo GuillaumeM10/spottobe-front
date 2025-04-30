@@ -1,5 +1,8 @@
 // @use '_variables.scss';
 @use 'global.scss';
+
 @use 'components/layout.scss';
+@use 'components/mapFilters.scss';
+@use 'components/searchBar.scss';
 
 @use 'pages/home.scss';

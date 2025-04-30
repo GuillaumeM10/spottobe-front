@@ -1,14 +1,15 @@
 #root {
   display: flex;
   width: 100%;
+  background: black;
 }
 
 .main {
-  max-width: 768px;
+  max-width: 550px;
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;
-  background: lightgoldenrodyellow;
+  background: white;
   overflow-x: hidden;
 }
 
