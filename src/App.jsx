@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "./App.css";
+import "./style/main.scss";
 import Router from "./components/Router";
 import Layout from "./components/Layout";
 import { BrowserRouter } from "react-router-dom";
