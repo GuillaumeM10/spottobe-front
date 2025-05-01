@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MapPostContent = ({ post, setSelectedPost }) => {
   const handleClose = () => {
@@ -10,8 +11,6 @@ const MapPostContent = ({ post, setSelectedPost }) => {
     const options = { year: "numeric", month: "long", day: "numeric" };
     return date.toLocaleDateString("fr-FR", options);
   };
-
-  console.log("Post content:", post);
 
   return (
     <div className="mapPostContent">
@@ -34,6 +33,9 @@ const MapPostContent = ({ post, setSelectedPost }) => {
       </div>
       <p>{post.title}</p>
       <p>{post.content}</p>
+      <Link to={`/events/${post.id}`} className="link">
+        Voir l'évènement
+      </Link>
     </div>
   );
 };

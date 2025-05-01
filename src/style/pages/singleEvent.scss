@@ -1,0 +1,43 @@
+.single-event {
+  .content {
+    padding: 16px;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 3px -6px 100px 0px rgba(0, 0, 0, 0.25);
+    min-height: calc(100vh - 250px);
+    width: calc(100% - 36px);
+    margin: -20px auto 0 auto;
+    background-color: white;
+    position: relative;
+  }
+
+  .cover {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .end-date b {
+    margin-right: 1px;
+  }
+}
