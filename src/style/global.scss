@@ -1,3 +1,10 @@
+$tag-date:#FF5C91;
+$tag-conference:#48A0FF;
+$tag-entre-amis:#00A64B;
+$tag-sport:#D76A03;
+$tag-concert:#F5BB00;
+$tag-festivals:#A870FF;
+
 #root {
   display: flex;
   width: 100%;
@@ -50,4 +57,52 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.custom-marker.tag-data svg {
+  border-color: $tag-date;
+}
+
+.custom-marker.tag-conferences svg {
+  border-color: $tag-conference;
+}
+
+.custom-marker.tag-entre-amis svg {
+  border-color: $tag-entre-amis;
+}
+
+.custom-marker.tag-sport svg {
+  border-color: $tag-sport;
+}
+
+.custom-marker.tag-concert svg {
+  border-color: $tag-concert;
+}
+
+.custom-marker.tag-festivals svg {
+  border-color: $tag-festivals;
+}
+
+.mapFilters .tag-data.active {
+  border-color: $tag-date;
+}
+
+.mapFilters .tag-conferences.active {
+  border-color: $tag-conference;
+}
+
+.mapFilters .tag-entre-amis.active {
+  border-color: $tag-entre-amis;
+}
+
+.mapFilters .tag-sport.active {
+  border-color: $tag-sport;
+}
+
+.mapFilters .tag-concert.active {
+  border-color: $tag-concert;
+}
+
+.mapFilters .tag-festivals.active {
+  border-color: $tag-festivals;
 }

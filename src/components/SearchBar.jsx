@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 
-const SearchBar = () => {
+const SearchBar = ({ mapPosts, setMapPosts }) => {
   const { posts } = useContext(AppContext);
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredPosts, setFilteredPosts] = useState(posts);

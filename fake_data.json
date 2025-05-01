@@ -10,25 +10,26 @@
     },
     "title": "Post Title 1",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["food", "travel", "art"],
+    "tags": ["Data", "Festivals", "Entre amis", "Concert"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 182,
-    "participants": ["johndoe", "charliew"],
+    "points": 458,
+    "participants": ["charliew", "janesmith"],
     "date": {
-      "start": "2023-11-20T12:00:00Z",
-      "end": "2023-11-20T14:00:00Z"
+      "start": "2023-10-20T12:00:00Z",
+      "end": "2023-10-20T14:00:00Z"
     },
     "location": {
-      "name": "Paris - La Villette",
-      "address": "211 Avenue Jean Jaurès, Paris, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 48.8897,
-        "longitude": 2.3934
+        "latitude": 44.897358,
+        "longitude": -0.492852
       }
     },
     "cover": "https://picsum.photos/1280/720?random=1&cover",
-    "price": 15
+    "price": 40,
+    "distance": 755
   },
   {
     "id": 2,
@@ -41,56 +42,58 @@
     },
     "title": "Post Title 2",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["design", "art", "food"],
+    "tags": ["Conférences", "Sport", "Concert"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 138,
-    "participants": ["alicej", "johndoe"],
+    "points": 466,
+    "participants": ["bobb", "johndoe"],
     "date": {
-      "start": "2023-11-23T12:00:00Z",
-      "end": "2023-11-23T14:00:00Z"
+      "start": "2023-10-16T12:00:00Z",
+      "end": "2023-10-16T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.921867,
+        "longitude": -0.521582
       }
     },
     "cover": "https://picsum.photos/1280/720?random=2&cover",
-    "price": 25
+    "price": 85,
+    "distance": 449
   },
   {
     "id": 3,
     "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
+      "name": "Charlie White",
+      "username": "charliew",
       "pp": "https://picsum.photos/1280/720?random=3",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
+      "email": "charliew@gmail.com"
     },
     "title": "Post Title 3",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["travel", "food", "design"],
+    "tags": ["Conférences", "Sport", "Data"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 234,
-    "participants": ["charliew", "janesmith"],
+    "points": 261,
+    "participants": ["charliew", "bobb"],
     "date": {
-      "start": "2023-10-15T12:00:00Z",
-      "end": "2023-10-15T14:00:00Z"
+      "start": "2023-11-15T12:00:00Z",
+      "end": "2023-11-15T14:00:00Z"
     },
     "location": {
-      "name": "Marseille - Vieux Port",
-      "address": "12 Quai du Port, Marseille, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.2965,
-        "longitude": 5.3698
+        "latitude": 44.869557,
+        "longitude": -0.5004
       }
     },
     "cover": "https://picsum.photos/1280/720?random=3&cover",
-    "price": 66
+    "price": 13,
+    "distance": 588
   },
   {
     "id": 4,
@@ -103,180 +106,186 @@
     },
     "title": "Post Title 4",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["travel", "food", "health"],
+    "tags": ["Entre amis", "Festivals"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 355,
-    "participants": ["alicej", "charliew"],
+    "points": 359,
+    "participants": ["johndoe", "alicej"],
     "date": {
-      "start": "2023-11-16T12:00:00Z",
-      "end": "2023-11-16T14:00:00Z"
+      "start": "2023-11-24T12:00:00Z",
+      "end": "2023-11-24T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.87561,
+        "longitude": -0.601998
       }
     },
     "cover": "https://picsum.photos/1280/720?random=4&cover",
-    "price": 69
+    "price": 78,
+    "distance": 281
   },
   {
     "id": 5,
     "author": {
-      "name": "Charlie White",
-      "username": "charliew",
+      "name": "Bob Brown",
+      "username": "bobb",
       "pp": "https://picsum.photos/1280/720?random=5",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "charliew@gmail.com"
+      "email": "bobb@gmail.com"
     },
     "title": "Post Title 5",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["sports", "tech", "travel"],
+    "tags": ["Conférences", "Data", "Sport", "Entre amis"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 489,
-    "participants": ["charliew", "janesmith"],
+    "points": 235,
+    "participants": ["charliew", "johndoe"],
     "date": {
-      "start": "2023-11-12T12:00:00Z",
-      "end": "2023-11-12T14:00:00Z"
+      "start": "2023-10-19T12:00:00Z",
+      "end": "2023-10-19T14:00:00Z"
     },
     "location": {
       "name": "Bordeaux - Parc exposition",
       "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 44.8378,
-        "longitude": -0.5792
+        "latitude": 44.765298,
+        "longitude": -0.507811
       }
     },
     "cover": "https://picsum.photos/1280/720?random=5&cover",
-    "price": 70
+    "price": 15,
+    "distance": 131
   },
   {
     "id": 6,
     "author": {
-      "name": "Jane Smith",
-      "username": "janesmith",
+      "name": "Alice Johnson",
+      "username": "alicej",
       "pp": "https://picsum.photos/1280/720?random=6",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "janesmith@gmail.com"
+      "email": "alicej@gmail.com"
     },
     "title": "Post Title 6",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["health", "sports", "science"],
+    "tags": ["Concert", "Sport"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 142,
-    "participants": ["johndoe", "janesmith"],
+    "points": 258,
+    "participants": ["johndoe", "alicej"],
     "date": {
-      "start": "2023-10-04T12:00:00Z",
-      "end": "2023-10-04T14:00:00Z"
+      "start": "2023-11-21T12:00:00Z",
+      "end": "2023-11-21T14:00:00Z"
     },
     "location": {
       "name": "Bordeaux - Parc exposition",
       "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 44.8378,
-        "longitude": -0.5792
+        "latitude": 44.931827,
+        "longitude": -0.678552
       }
     },
     "cover": "https://picsum.photos/1280/720?random=6&cover",
-    "price": 18
+    "price": 18,
+    "distance": 771
   },
   {
     "id": 7,
     "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
+      "name": "Bob Brown",
+      "username": "bobb",
       "pp": "https://picsum.photos/1280/720?random=7",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
+      "email": "bobb@gmail.com"
     },
     "title": "Post Title 7",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["sports", "health", "art"],
+    "tags": ["Sport", "Entre amis", "Concert", "Conférences"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 467,
-    "participants": ["janesmith", "bobb"],
+    "points": 141,
+    "participants": ["alicej", "charliew"],
     "date": {
-      "start": "2023-10-08T12:00:00Z",
-      "end": "2023-10-08T14:00:00Z"
+      "start": "2023-10-14T12:00:00Z",
+      "end": "2023-10-14T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.887736,
+        "longitude": -0.513861
       }
     },
     "cover": "https://picsum.photos/1280/720?random=7&cover",
-    "price": 30
+    "price": 57,
+    "distance": 311
   },
   {
     "id": 8,
     "author": {
-      "name": "John Doe",
-      "username": "johndoe",
+      "name": "Alice Johnson",
+      "username": "alicej",
       "pp": "https://picsum.photos/1280/720?random=8",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
+      "email": "alicej@gmail.com"
     },
     "title": "Post Title 8",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["art", "sports", "tech"],
+    "tags": ["Data", "Conférences"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 55,
-    "participants": ["bobb", "johndoe"],
+    "points": 428,
+    "participants": ["johndoe", "charliew"],
     "date": {
-      "start": "2023-11-06T12:00:00Z",
-      "end": "2023-11-06T14:00:00Z"
+      "start": "2023-11-22T12:00:00Z",
+      "end": "2023-11-22T14:00:00Z"
     },
     "location": {
-      "name": "Marseille - Vieux Port",
-      "address": "12 Quai du Port, Marseille, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.2965,
-        "longitude": 5.3698
+        "latitude": 44.867456,
+        "longitude": -0.547047
       }
     },
     "cover": "https://picsum.photos/1280/720?random=8&cover",
-    "price": 88
+    "price": 12,
+    "distance": 654
   },
   {
     "id": 9,
     "author": {
-      "name": "Jane Smith",
-      "username": "janesmith",
+      "name": "Bob Brown",
+      "username": "bobb",
       "pp": "https://picsum.photos/1280/720?random=9",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "janesmith@gmail.com"
+      "email": "bobb@gmail.com"
     },
     "title": "Post Title 9",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["music", "science", "health"],
+    "tags": ["Entre amis", "Festivals"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 193,
-    "participants": ["alicej", "janesmith"],
+    "points": 323,
+    "participants": ["bobb", "charliew"],
     "date": {
-      "start": "2023-11-25T12:00:00Z",
-      "end": "2023-11-25T14:00:00Z"
+      "start": "2023-11-29T12:00:00Z",
+      "end": "2023-11-29T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.798956,
+        "longitude": -0.656828
       }
     },
     "cover": "https://picsum.photos/1280/720?random=9&cover",
-    "price": 82
+    "price": 10,
+    "distance": 556
   },
   {
     "id": 10,
@@ -289,273 +298,282 @@
     },
     "title": "Post Title 10",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["design", "art", "music"],
+    "tags": ["Sport", "Festivals", "Data", "Concert"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 134,
-    "participants": ["alicej", "charliew"],
+    "points": 136,
+    "participants": ["johndoe", "charliew"],
     "date": {
-      "start": "2023-11-03T12:00:00Z",
-      "end": "2023-11-03T14:00:00Z"
-    },
-    "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
-      "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
-      }
-    },
-    "cover": "https://picsum.photos/1280/720?random=10&cover",
-    "price": 19
-  },
-  {
-    "id": 11,
-    "author": {
-      "name": "John Doe",
-      "username": "johndoe",
-      "pp": "https://picsum.photos/1280/720?random=11",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
-    },
-    "title": "Post Title 11",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["music", "sports", "travel"],
-    "createdAt": "2023-10-01T12:00:00Z",
-    "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 478,
-    "participants": ["charliew", "janesmith"],
-    "date": {
-      "start": "2023-11-24T12:00:00Z",
-      "end": "2023-11-24T14:00:00Z"
-    },
-    "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
-      "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
-      }
-    },
-    "cover": "https://picsum.photos/1280/720?random=11&cover",
-    "price": 46
-  },
-  {
-    "id": 12,
-    "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
-      "pp": "https://picsum.photos/1280/720?random=12",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
-    },
-    "title": "Post Title 12",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["food", "sports", "science"],
-    "createdAt": "2023-10-01T12:00:00Z",
-    "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 139,
-    "participants": ["johndoe", "janesmith"],
-    "date": {
-      "start": "2023-10-19T12:00:00Z",
-      "end": "2023-10-19T14:00:00Z"
-    },
-    "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
-      "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
-      }
-    },
-    "cover": "https://picsum.photos/1280/720?random=12&cover",
-    "price": 7
-  },
-  {
-    "id": 13,
-    "author": {
-      "name": "Jane Smith",
-      "username": "janesmith",
-      "pp": "https://picsum.photos/1280/720?random=13",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "janesmith@gmail.com"
-    },
-    "title": "Post Title 13",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["tech", "sports", "food"],
-    "createdAt": "2023-10-01T12:00:00Z",
-    "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 63,
-    "participants": ["bobb", "alicej"],
-    "date": {
-      "start": "2023-11-28T12:00:00Z",
-      "end": "2023-11-28T14:00:00Z"
+      "start": "2023-10-13T12:00:00Z",
+      "end": "2023-10-13T14:00:00Z"
     },
     "location": {
       "name": "Bordeaux - Parc exposition",
       "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 44.8378,
-        "longitude": -0.5792
+        "latitude": 44.937039,
+        "longitude": -0.538579
+      }
+    },
+    "cover": "https://picsum.photos/1280/720?random=10&cover",
+    "price": 80,
+    "distance": 793
+  },
+  {
+    "id": 11,
+    "author": {
+      "name": "Bob Brown",
+      "username": "bobb",
+      "pp": "https://picsum.photos/1280/720?random=11",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "email": "bobb@gmail.com"
+    },
+    "title": "Post Title 11",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tags": ["Entre amis", "Concert", "Festivals", "Conférences"],
+    "createdAt": "2023-10-01T12:00:00Z",
+    "updatedAt": "2023-10-01T12:00:00Z",
+    "points": 256,
+    "participants": ["janesmith", "charliew"],
+    "date": {
+      "start": "2023-10-22T12:00:00Z",
+      "end": "2023-10-22T14:00:00Z"
+    },
+    "location": {
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
+      "coordinates": {
+        "latitude": 44.908378,
+        "longitude": -0.629726
+      }
+    },
+    "cover": "https://picsum.photos/1280/720?random=11&cover",
+    "price": 8,
+    "distance": 54
+  },
+  {
+    "id": 12,
+    "author": {
+      "name": "Bob Brown",
+      "username": "bobb",
+      "pp": "https://picsum.photos/1280/720?random=12",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "email": "bobb@gmail.com"
+    },
+    "title": "Post Title 12",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tags": ["Data", "Conférences", "Festivals"],
+    "createdAt": "2023-10-01T12:00:00Z",
+    "updatedAt": "2023-10-01T12:00:00Z",
+    "points": 163,
+    "participants": ["charliew", "johndoe"],
+    "date": {
+      "start": "2023-11-16T12:00:00Z",
+      "end": "2023-11-16T14:00:00Z"
+    },
+    "location": {
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
+      "coordinates": {
+        "latitude": 44.85196,
+        "longitude": -0.531305
+      }
+    },
+    "cover": "https://picsum.photos/1280/720?random=12&cover",
+    "price": 83,
+    "distance": 104
+  },
+  {
+    "id": 13,
+    "author": {
+      "name": "Charlie White",
+      "username": "charliew",
+      "pp": "https://picsum.photos/1280/720?random=13",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "email": "charliew@gmail.com"
+    },
+    "title": "Post Title 13",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tags": ["Entre amis", "Sport", "Conférences", "Data"],
+    "createdAt": "2023-10-01T12:00:00Z",
+    "updatedAt": "2023-10-01T12:00:00Z",
+    "points": 253,
+    "participants": ["janesmith", "johndoe"],
+    "date": {
+      "start": "2023-10-29T12:00:00Z",
+      "end": "2023-10-29T14:00:00Z"
+    },
+    "location": {
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
+      "coordinates": {
+        "latitude": 44.79008,
+        "longitude": -0.655331
       }
     },
     "cover": "https://picsum.photos/1280/720?random=13&cover",
-    "price": 88
+    "price": 57,
+    "distance": 749
   },
   {
     "id": 14,
     "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
+      "name": "John Doe",
+      "username": "johndoe",
       "pp": "https://picsum.photos/1280/720?random=14",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
+      "email": "johndoe@gmail.com"
     },
     "title": "Post Title 14",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["tech", "health", "science"],
+    "tags": ["Data", "Concert"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 173,
-    "participants": ["charliew", "bobb"],
+    "points": 257,
+    "participants": ["alicej", "johndoe"],
     "date": {
-      "start": "2023-11-15T12:00:00Z",
-      "end": "2023-11-15T14:00:00Z"
+      "start": "2023-10-15T12:00:00Z",
+      "end": "2023-10-15T14:00:00Z"
     },
     "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
+        "latitude": 44.862908,
+        "longitude": -0.581192
       }
     },
     "cover": "https://picsum.photos/1280/720?random=14&cover",
-    "price": 76
+    "price": 15,
+    "distance": 370
   },
   {
     "id": 15,
     "author": {
-      "name": "Bob Brown",
-      "username": "bobb",
+      "name": "Alice Johnson",
+      "username": "alicej",
       "pp": "https://picsum.photos/1280/720?random=15",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "bobb@gmail.com"
+      "email": "alicej@gmail.com"
     },
     "title": "Post Title 15",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["art", "health", "music"],
+    "tags": ["Sport", "Concert", "Data", "Entre amis"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 199,
-    "participants": ["johndoe", "alicej"],
+    "points": 292,
+    "participants": ["johndoe", "charliew"],
     "date": {
-      "start": "2023-11-18T12:00:00Z",
-      "end": "2023-11-18T14:00:00Z"
+      "start": "2023-11-09T12:00:00Z",
+      "end": "2023-11-09T14:00:00Z"
     },
     "location": {
-      "name": "Paris - La Villette",
-      "address": "211 Avenue Jean Jaurès, Paris, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 48.8897,
-        "longitude": 2.3934
+        "latitude": 44.838587,
+        "longitude": -0.4968
       }
     },
     "cover": "https://picsum.photos/1280/720?random=15&cover",
-    "price": 11
+    "price": 0,
+    "distance": 90
   },
   {
     "id": 16,
     "author": {
-      "name": "Bob Brown",
-      "username": "bobb",
+      "name": "John Doe",
+      "username": "johndoe",
       "pp": "https://picsum.photos/1280/720?random=16",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "bobb@gmail.com"
+      "email": "johndoe@gmail.com"
     },
     "title": "Post Title 16",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["travel", "health", "music"],
+    "tags": ["Sport", "Data"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 184,
-    "participants": ["johndoe", "bobb"],
+    "points": 440,
+    "participants": ["alicej", "bobb"],
     "date": {
-      "start": "2023-10-11T12:00:00Z",
-      "end": "2023-10-11T14:00:00Z"
+      "start": "2023-10-18T12:00:00Z",
+      "end": "2023-10-18T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.897832,
+        "longitude": -0.571134
       }
     },
     "cover": "https://picsum.photos/1280/720?random=16&cover",
-    "price": 5
+    "price": 23,
+    "distance": 658
   },
   {
     "id": 17,
     "author": {
-      "name": "John Doe",
-      "username": "johndoe",
+      "name": "Jane Smith",
+      "username": "janesmith",
       "pp": "https://picsum.photos/1280/720?random=17",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
+      "email": "janesmith@gmail.com"
     },
     "title": "Post Title 17",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["science", "tech", "food"],
+    "tags": ["Entre amis", "Data"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 399,
-    "participants": ["bobb", "janesmith"],
+    "points": 426,
+    "participants": ["alicej", "johndoe"],
     "date": {
-      "start": "2023-10-11T12:00:00Z",
-      "end": "2023-10-11T14:00:00Z"
+      "start": "2023-10-26T12:00:00Z",
+      "end": "2023-10-26T14:00:00Z"
     },
     "location": {
-      "name": "Paris - La Villette",
-      "address": "211 Avenue Jean Jaurès, Paris, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 48.8897,
-        "longitude": 2.3934
+        "latitude": 44.859507,
+        "longitude": -0.638076
       }
     },
     "cover": "https://picsum.photos/1280/720?random=17&cover",
-    "price": 54
+    "price": 46,
+    "distance": 565
   },
   {
     "id": 18,
     "author": {
-      "name": "John Doe",
-      "username": "johndoe",
+      "name": "Alice Johnson",
+      "username": "alicej",
       "pp": "https://picsum.photos/1280/720?random=18",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
+      "email": "alicej@gmail.com"
     },
     "title": "Post Title 18",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["art", "health", "tech"],
+    "tags": ["Concert", "Entre amis", "Data"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 232,
-    "participants": ["janesmith", "charliew"],
+    "points": 419,
+    "participants": ["bobb", "johndoe"],
     "date": {
-      "start": "2023-10-06T12:00:00Z",
-      "end": "2023-10-06T14:00:00Z"
+      "start": "2023-10-19T12:00:00Z",
+      "end": "2023-10-19T14:00:00Z"
     },
     "location": {
-      "name": "Marseille - Vieux Port",
-      "address": "12 Quai du Port, Marseille, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.2965,
-        "longitude": 5.3698
+        "latitude": 44.815762,
+        "longitude": -0.532402
       }
     },
     "cover": "https://picsum.photos/1280/720?random=18&cover",
-    "price": 25
+    "price": 37,
+    "distance": 533
   },
   {
     "id": 19,
@@ -568,242 +586,250 @@
     },
     "title": "Post Title 19",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["tech", "design", "travel"],
+    "tags": ["Data", "Festivals", "Entre amis", "Conférences"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 139,
-    "participants": ["janesmith", "alicej"],
+    "points": 296,
+    "participants": ["janesmith", "charliew"],
     "date": {
-      "start": "2023-11-12T12:00:00Z",
-      "end": "2023-11-12T14:00:00Z"
+      "start": "2023-11-01T12:00:00Z",
+      "end": "2023-11-01T14:00:00Z"
     },
     "location": {
       "name": "Bordeaux - Parc exposition",
       "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 44.8378,
-        "longitude": -0.5792
+        "latitude": 44.739163,
+        "longitude": -0.611986
       }
     },
     "cover": "https://picsum.photos/1280/720?random=19&cover",
-    "price": 57
+    "price": 76,
+    "distance": 443
   },
   {
     "id": 20,
     "author": {
-      "name": "Charlie White",
-      "username": "charliew",
+      "name": "Jane Smith",
+      "username": "janesmith",
       "pp": "https://picsum.photos/1280/720?random=20",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "charliew@gmail.com"
+      "email": "janesmith@gmail.com"
     },
     "title": "Post Title 20",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["tech", "health", "art"],
+    "tags": ["Sport", "Data", "Festivals"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 477,
-    "participants": ["bobb", "johndoe"],
+    "points": 417,
+    "participants": ["charliew", "alicej"],
     "date": {
-      "start": "2023-11-05T12:00:00Z",
-      "end": "2023-11-05T14:00:00Z"
+      "start": "2023-11-16T12:00:00Z",
+      "end": "2023-11-16T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.747639,
+        "longitude": -0.587428
       }
     },
     "cover": "https://picsum.photos/1280/720?random=20&cover",
-    "price": 81
+    "price": 27,
+    "distance": 454
   },
   {
     "id": 21,
     "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
+      "name": "John Doe",
+      "username": "johndoe",
       "pp": "https://picsum.photos/1280/720?random=21",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
+      "email": "johndoe@gmail.com"
     },
     "title": "Post Title 21",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["science", "music", "art"],
+    "tags": ["Conférences", "Festivals", "Entre amis"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 363,
-    "participants": ["alicej", "charliew"],
+    "points": 406,
+    "participants": ["charliew", "bobb"],
     "date": {
-      "start": "2023-10-02T12:00:00Z",
-      "end": "2023-10-02T14:00:00Z"
+      "start": "2023-10-05T12:00:00Z",
+      "end": "2023-10-05T14:00:00Z"
     },
     "location": {
-      "name": "Marseille - Vieux Port",
-      "address": "12 Quai du Port, Marseille, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.2965,
-        "longitude": 5.3698
+        "latitude": 44.856217,
+        "longitude": -0.655453
       }
     },
     "cover": "https://picsum.photos/1280/720?random=21&cover",
-    "price": 0
+    "price": 87,
+    "distance": 543
   },
   {
     "id": 22,
     "author": {
-      "name": "John Doe",
-      "username": "johndoe",
+      "name": "Bob Brown",
+      "username": "bobb",
       "pp": "https://picsum.photos/1280/720?random=22",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
+      "email": "bobb@gmail.com"
     },
     "title": "Post Title 22",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["design", "food", "art"],
+    "tags": ["Entre amis", "Sport", "Data", "Concert"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 224,
-    "participants": ["charliew", "janesmith"],
+    "points": 199,
+    "participants": ["bobb", "alicej"],
     "date": {
-      "start": "2023-11-13T12:00:00Z",
-      "end": "2023-11-13T14:00:00Z"
+      "start": "2023-11-04T12:00:00Z",
+      "end": "2023-11-04T14:00:00Z"
     },
     "location": {
-      "name": "Paris - La Villette",
-      "address": "211 Avenue Jean Jaurès, Paris, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 48.8897,
-        "longitude": 2.3934
+        "latitude": 44.912604,
+        "longitude": -0.557551
       }
     },
     "cover": "https://picsum.photos/1280/720?random=22&cover",
-    "price": 6
+    "price": 64,
+    "distance": 725
   },
   {
     "id": 23,
     "author": {
-      "name": "John Doe",
-      "username": "johndoe",
+      "name": "Alice Johnson",
+      "username": "alicej",
       "pp": "https://picsum.photos/1280/720?random=23",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
+      "email": "alicej@gmail.com"
     },
     "title": "Post Title 23",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["sports", "travel", "science"],
+    "tags": ["Festivals", "Data", "Sport"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 330,
-    "participants": ["charliew", "bobb"],
+    "points": 470,
+    "participants": ["johndoe", "charliew"],
     "date": {
-      "start": "2023-11-27T12:00:00Z",
-      "end": "2023-11-27T14:00:00Z"
+      "start": "2023-11-04T12:00:00Z",
+      "end": "2023-11-04T14:00:00Z"
     },
     "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
+        "latitude": 44.931347,
+        "longitude": -0.607176
       }
     },
     "cover": "https://picsum.photos/1280/720?random=23&cover",
-    "price": 72
+    "price": 76,
+    "distance": 506
   },
   {
     "id": 24,
     "author": {
-      "name": "Jane Smith",
-      "username": "janesmith",
+      "name": "Bob Brown",
+      "username": "bobb",
       "pp": "https://picsum.photos/1280/720?random=24",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "janesmith@gmail.com"
+      "email": "bobb@gmail.com"
     },
     "title": "Post Title 24",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["design", "tech", "art"],
+    "tags": ["Data", "Sport", "Entre amis", "Festivals"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 370,
-    "participants": ["bobb", "janesmith"],
+    "points": 256,
+    "participants": ["alicej", "charliew"],
     "date": {
-      "start": "2023-11-18T12:00:00Z",
-      "end": "2023-11-18T14:00:00Z"
+      "start": "2023-11-07T12:00:00Z",
+      "end": "2023-11-07T14:00:00Z"
     },
     "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
+        "latitude": 44.883811,
+        "longitude": -0.597502
       }
     },
     "cover": "https://picsum.photos/1280/720?random=24&cover",
-    "price": 65
+    "price": 72,
+    "distance": 602
   },
   {
     "id": 25,
     "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
+      "name": "Charlie White",
+      "username": "charliew",
       "pp": "https://picsum.photos/1280/720?random=25",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
+      "email": "charliew@gmail.com"
     },
     "title": "Post Title 25",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["tech", "health", "art"],
+    "tags": ["Data", "Concert"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 384,
-    "participants": ["charliew", "alicej"],
+    "points": 382,
+    "participants": ["charliew", "bobb"],
     "date": {
-      "start": "2023-10-16T12:00:00Z",
-      "end": "2023-10-16T14:00:00Z"
+      "start": "2023-10-30T12:00:00Z",
+      "end": "2023-10-30T14:00:00Z"
     },
     "location": {
-      "name": "Toulouse - Capitole",
-      "address": "Place du Capitole, Toulouse, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 43.6047,
-        "longitude": 1.4442
+        "latitude": 44.816329,
+        "longitude": -0.514122
       }
     },
     "cover": "https://picsum.photos/1280/720?random=25&cover",
-    "price": 50
+    "price": 24,
+    "distance": 224
   },
   {
     "id": 26,
     "author": {
-      "name": "Alice Johnson",
-      "username": "alicej",
+      "name": "Charlie White",
+      "username": "charliew",
       "pp": "https://picsum.photos/1280/720?random=26",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "alicej@gmail.com"
+      "email": "charliew@gmail.com"
     },
     "title": "Post Title 26",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["design", "food", "health"],
+    "tags": ["Entre amis", "Conférences", "Concert", "Festivals"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 229,
-    "participants": ["johndoe", "charliew"],
+    "points": 193,
+    "participants": ["johndoe", "alicej"],
     "date": {
-      "start": "2023-11-25T12:00:00Z",
-      "end": "2023-11-25T14:00:00Z"
+      "start": "2023-11-23T12:00:00Z",
+      "end": "2023-11-23T14:00:00Z"
     },
     "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
+        "latitude": 44.865853,
+        "longitude": -0.59425
       }
     },
     "cover": "https://picsum.photos/1280/720?random=26&cover",
-    "price": 46
+    "price": 32,
+    "distance": 596
   },
   {
     "id": 27,
@@ -816,117 +842,121 @@
     },
     "title": "Post Title 27",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["art", "food", "tech"],
+    "tags": ["Conférences", "Festivals"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 322,
-    "participants": ["bobb", "alicej"],
+    "points": 496,
+    "participants": ["alicej", "charliew"],
     "date": {
-      "start": "2023-10-29T12:00:00Z",
-      "end": "2023-10-29T14:00:00Z"
+      "start": "2023-11-18T12:00:00Z",
+      "end": "2023-11-18T14:00:00Z"
     },
     "location": {
       "name": "Bordeaux - Parc exposition",
       "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 44.8378,
-        "longitude": -0.5792
+        "latitude": 44.928544,
+        "longitude": -0.575756
       }
     },
     "cover": "https://picsum.photos/1280/720?random=27&cover",
-    "price": 15
+    "price": 42,
+    "distance": 884
   },
   {
     "id": 28,
     "author": {
-      "name": "John Doe",
-      "username": "johndoe",
-      "pp": "https://picsum.photos/1280/720?random=28",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
-    },
-    "title": "Post Title 28",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["tech", "food", "health"],
-    "createdAt": "2023-10-01T12:00:00Z",
-    "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 165,
-    "participants": ["janesmith", "bobb"],
-    "date": {
-      "start": "2023-11-11T12:00:00Z",
-      "end": "2023-11-11T14:00:00Z"
-    },
-    "location": {
-      "name": "Lyon - Centre Ville",
-      "address": "45 Avenue des Champs, Lyon, France",
-      "coordinates": {
-        "latitude": 45.764,
-        "longitude": 4.8357
-      }
-    },
-    "cover": "https://picsum.photos/1280/720?random=28&cover",
-    "price": 12
-  },
-  {
-    "id": 29,
-    "author": {
-      "name": "John Doe",
-      "username": "johndoe",
-      "pp": "https://picsum.photos/1280/720?random=29",
-      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "email": "johndoe@gmail.com"
-    },
-    "title": "Post Title 29",
-    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["art", "tech", "design"],
-    "createdAt": "2023-10-01T12:00:00Z",
-    "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 226,
-    "participants": ["charliew", "janesmith"],
-    "date": {
-      "start": "2023-11-20T12:00:00Z",
-      "end": "2023-11-20T14:00:00Z"
-    },
-    "location": {
-      "name": "Paris - La Villette",
-      "address": "211 Avenue Jean Jaurès, Paris, France",
-      "coordinates": {
-        "latitude": 48.8897,
-        "longitude": 2.3934
-      }
-    },
-    "cover": "https://picsum.photos/1280/720?random=29&cover",
-    "price": 62
-  },
-  {
-    "id": 30,
-    "author": {
       "name": "Alice Johnson",
       "username": "alicej",
-      "pp": "https://picsum.photos/1280/720?random=30",
+      "pp": "https://picsum.photos/1280/720?random=28",
       "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "email": "alicej@gmail.com"
     },
-    "title": "Post Title 30",
+    "title": "Post Title 28",
     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "tags": ["art", "travel", "sports"],
+    "tags": ["Entre amis", "Conférences"],
     "createdAt": "2023-10-01T12:00:00Z",
     "updatedAt": "2023-10-01T12:00:00Z",
-    "points": 89,
-    "participants": ["bobb", "alicej"],
+    "points": 331,
+    "participants": ["bobb", "janesmith"],
     "date": {
-      "start": "2023-11-20T12:00:00Z",
-      "end": "2023-11-20T14:00:00Z"
+      "start": "2023-11-26T12:00:00Z",
+      "end": "2023-11-26T14:00:00Z"
     },
     "location": {
       "name": "Bordeaux - Parc exposition",
       "address": "123 Rue de la République, Bordeaux, France",
       "coordinates": {
-        "latitude": 44.8378,
-        "longitude": -0.5792
+        "latitude": 44.78913,
+        "longitude": -0.567839
+      }
+    },
+    "cover": "https://picsum.photos/1280/720?random=28&cover",
+    "price": 28,
+    "distance": 147
+  },
+  {
+    "id": 29,
+    "author": {
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "pp": "https://picsum.photos/1280/720?random=29",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "email": "janesmith@gmail.com"
+    },
+    "title": "Post Title 29",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tags": ["Festivals", "Entre amis", "Concert", "Sport"],
+    "createdAt": "2023-10-01T12:00:00Z",
+    "updatedAt": "2023-10-01T12:00:00Z",
+    "points": 271,
+    "participants": ["janesmith", "bobb"],
+    "date": {
+      "start": "2023-10-16T12:00:00Z",
+      "end": "2023-10-16T14:00:00Z"
+    },
+    "location": {
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
+      "coordinates": {
+        "latitude": 44.925485,
+        "longitude": -0.650317
+      }
+    },
+    "cover": "https://picsum.photos/1280/720?random=29&cover",
+    "price": 34,
+    "distance": 301
+  },
+  {
+    "id": 30,
+    "author": {
+      "name": "Jane Smith",
+      "username": "janesmith",
+      "pp": "https://picsum.photos/1280/720?random=30",
+      "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "email": "janesmith@gmail.com"
+    },
+    "title": "Post Title 30",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "tags": ["Concert", "Conférences", "Entre amis", "Data"],
+    "createdAt": "2023-10-01T12:00:00Z",
+    "updatedAt": "2023-10-01T12:00:00Z",
+    "points": 156,
+    "participants": ["johndoe", "janesmith"],
+    "date": {
+      "start": "2023-11-23T12:00:00Z",
+      "end": "2023-11-23T14:00:00Z"
+    },
+    "location": {
+      "name": "Bordeaux - Parc exposition",
+      "address": "123 Rue de la République, Bordeaux, France",
+      "coordinates": {
+        "latitude": 44.885874,
+        "longitude": -0.562698
       }
     },
     "cover": "https://picsum.photos/1280/720?random=30&cover",
-    "price": 87
+    "price": 4,
+    "distance": 18
   }
 ]

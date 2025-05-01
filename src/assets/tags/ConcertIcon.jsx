@@ -12,9 +12,9 @@ const ConcertIcon = () => {
       <path
         d="M7 12C7 13.6569 5.6569 15 4 15C2.34315 15 1 13.6569 1 12C1 10.3431 2.34315 9 4 9C5.6569 9 7 10.3431 7 12ZM7 12V5M7 5V1H14V5H7Z"
         stroke="#F5BB00"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

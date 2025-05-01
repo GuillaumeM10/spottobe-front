@@ -1,6 +1,24 @@
+$tag-date:#FF5C91;
+$tag-conference:#48A0FF;
+$tag-entre-amis:#00A64B;
+$tag-sport:#D76A03;
+$tag-concert:#F5BB00;
+$tag-festivals:#A870FF;
+
 .home {
-  .leaflet-control {
+  .leaflet-control-attribution {
     display: none;
+  }
+
+  .leaflet-control-container,
+  .leaflet-control-container>* {
+    position: initial !important;
+  }
+
+  .leaflet-control-zoom {
+    position: absolute;
+    bottom: 90px;
+    right: 10px;
   }
 
   .search-container {
@@ -9,5 +27,57 @@
     left: 0;
     z-index: 99999;
     width: 100%;
+
+    .searchBar {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .mapFilters .tag:first-child {
+      margin-left: 20px;
+    }
+
+    .mapFilters .tag:last-child {
+      margin-right: 20px;
+    }
+  }
+
+  .custom-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    width: 64px !important;
+    height: 64px !important;
+
+    svg {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      padding: 14px;
+      border-width: 3px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background-color: white;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      border-radius: 0 0 4px 0;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+  .leaflet-popup {
+    display: none !important;
   }
 }

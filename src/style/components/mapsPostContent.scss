@@ -1,0 +1,53 @@
+.mapPostContent {
+  position: absolute;
+  bottom: 90px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 99999;
+  width: calc(100% - 40px);
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    pointer-events: all;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+
+  .end-date b {
+    margin-right: 1px;
+  }
+}
