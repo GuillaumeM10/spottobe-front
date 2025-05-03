@@ -1,17 +1,26 @@
 .mapFilters {
-
   display: flex;
+  flex-wrap: nowrap;
   gap: 10px;
   width: 100%;
   overflow-x: auto;
+  cursor: grab;
+  user-select: none;
+  
+  &.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+  }
 
   .tag {
     background-color: white;
     border-radius: 50px;
     border-width: 2px;
+    border-style: solid;
     border-color: white;
 
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     gap: 10px;
     padding: 12px 13px;
@@ -19,5 +28,20 @@
     white-space: nowrap;
     box-shadow: 0px 2.145px 4.29px 0px rgba(173, 175, 187, 0.30);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+    &.active {
+      background-color: #f0f0f0;
+      border-color: #d0d0d0;
+    }
   }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }

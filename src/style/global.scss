@@ -106,3 +106,53 @@ $tag-festivals:#A870FF;
 .mapFilters .tag-festivals.active {
   border-color: $tag-festivals;
 }
+
+.singleEventPage .tag {
+  &.tag-data {
+    border-color: $tag-date;
+  }
+
+  &.tag-conferences {
+    border-color: $tag-conference;
+  }
+
+  &.tag-entre-amis {
+    border-color: $tag-entre-amis;
+  }
+
+  &.tag-sport {
+    border-color: $tag-sport;
+  }
+
+  &.tag-concert {
+    border-color: $tag-concert;
+  }
+
+  &.tag-festivals {
+    border-color: $tag-festivals;
+  }
+
+  &.tag-data .circle {
+    background-color: $tag-date;
+  }
+
+  &.tag-conferences .circle {
+    background-color: $tag-conference;
+  }
+
+  &.tag-entre-amis .circle {
+    background-color: $tag-entre-amis;
+  }
+
+  &.tag-sport .circle {
+    background-color: $tag-sport;
+  }
+
+  &.tag-concert .circle {
+    background-color: $tag-concert;
+  }
+
+  &.tag-festivals .circle {
+    background-color: $tag-festivals;
+  }
+}
