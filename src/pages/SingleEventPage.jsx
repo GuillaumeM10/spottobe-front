@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,12 +7,18 @@ import { Pagination } from "swiper/modules";
 import PointsIcon from "../assets/layout/PointsIcon";
 import CalandarIcon from "../assets/CalandarIcon";
 import MapPointerIcon from "../assets/MapPointerIcon";
+import PostCard from "../components/PostCard";
+import TicketIcon from "../assets/TicketIcon";
+import { useState } from "react";
+import PostSwiper from "../components/PostSwiper";
 
 const SingleEventPage = () => {
   const { posts } = useContext(AppContext);
   const { id } = useParams();
   const post = posts.find((post) => post.id === parseInt(id, 10));
   const navigate = useNavigate();
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
 
   console.log("post", post);
 
@@ -125,7 +131,7 @@ const SingleEventPage = () => {
               <p className="hours">15h30-22h00</p>
 
               <button
-                class="btn"
+                className="btn"
                 onClick={() => handleAddToCalandar(post.date)}
               >
                 <CalandarIcon /> Ajouter à mon agenda
@@ -143,7 +149,7 @@ const SingleEventPage = () => {
               <p className="location-adress">{post.location.address}</p>
 
               <button
-                class="btn"
+                className="btn"
                 onClick={() =>
                   handleSeeOnMaps(
                     post.location.latitude,
@@ -155,8 +161,103 @@ const SingleEventPage = () => {
               </button>
             </div>
           </div>
+
+          <div className="tarifs">
+            <div className="tarifs-content flex items-center">
+              <TicketIcon />
+
+              <div className="tarif-card-container">
+                <p>
+                  <b>Tarifs et options</b>
+                </p>
+
+                <div className="tarif-card">
+                  <div className="">
+                    <p>Pass 2 Jours par pers.</p>
+                    <p className="price">{post.price}€</p>
+                  </div>
+                  <div className="add">
+                    <button
+                      onClick={() => setCount1(Math.max(0, count1 - 1))}
+                      disabled={count1 <= 0}
+                    >
+                      -
+                    </button>
+                    <input
+                      className="text-center"
+                      type="number"
+                      value={count1}
+                      min="0"
+                      max="10"
+                      onChange={(e) =>
+                        setCount1(
+                          Math.min(
+                            10,
+                            Math.max(0, parseInt(e.target.value) || 0)
+                          )
+                        )
+                      }
+                      disabled={count1 >= 10}
+                    />
+                    <button
+                      onClick={() => setCount1(Math.min(10, count1 + 1))}
+                      disabled={count1 >= 10}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+
+                <div className="tarif-card">
+                  <div className="">
+                    <p>Pass 2 Jours VIP par pers.</p>
+                    <p className="price">{+post.price * 1.8}€</p>
+                  </div>
+                  <div className="add">
+                    <button
+                      onClick={() => setCount2(Math.max(0, count2 - 1))}
+                      disabled={count2 <= 0}
+                    >
+                      -
+                    </button>
+                    <input
+                      className="text-center"
+                      type="number"
+                      value={count2}
+                      min="0"
+                      max="10"
+                      onChange={(e) =>
+                        setCount2(
+                          Math.min(
+                            10,
+                            Math.max(0, parseInt(e.target.value) || 0)
+                          )
+                        )
+                      }
+                      disabled={count2 >= 10}
+                    />
+                    <button
+                      onClick={() => setCount2(Math.min(10, count2 + 1))}
+                      disabled={count2 >= 10}
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <Link className="participer"> Participer </Link>
       </div>
+
+      <PostSwiper
+        posts={posts.filter((post) => post.id !== parseInt(id, 10))}
+        seeMoreText="Voir tout"
+        seeMoreLink="/events"
+        title="Dans le même style"
+        nbPosts={3}
+      />
     </div>
   );
 };

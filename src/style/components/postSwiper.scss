@@ -1,0 +1,13 @@
+.postSwiper {
+  .see-also {
+    margin: 0 auto 130px auto;
+
+    .swiper {
+      overflow: visible !important;
+    }
+
+    .swiper-slide {
+      cursor: grab;
+    }
+  }
+}
