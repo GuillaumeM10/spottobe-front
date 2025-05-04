@@ -6,6 +6,11 @@ $primary: #7D92D7;
   .nav {
     padding: 7px 19px 8px 19px;
     position: fixed;
+    max-width: 550px;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 
     svg {
       width: 30px;

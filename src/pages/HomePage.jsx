@@ -87,7 +87,7 @@ const HomePage = () => {
         center={[44.833328, -0.56667]}
         zoom={13}
         scrollWheelZoom={false}
-        style={{ height: "100vh", width: "100%" }}
+        style={{ height: "100dvh", width: "100%" }}
         zoomControl={true}
       >
         <TileLayer

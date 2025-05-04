@@ -17,7 +17,7 @@ const AppProvider = ({ children }) => {
   ];
 
   return (
-    <AppContext.Provider value={{ posts, setPosts, posts, tags }}>
+    <AppContext.Provider value={{ posts, setPosts, tags }}>
       {children}
     </AppContext.Provider>
   );
