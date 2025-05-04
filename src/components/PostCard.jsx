@@ -2,10 +2,11 @@ import React from "react";
 import MapPointerIcon from "../assets/MapPointerIcon";
 import PointsIcon from "../assets/layout/PointsIcon";
 import { dateFormatter } from "../services/generalFunctions";
+import { Link } from "react-router-dom";
 
 const PostCard = (post) => {
   return (
-    <div className="postCard" key={post.id}>
+    <Link to={`/events/${post.id}`} className="postCard" key={post.id}>
       <div className="card-cover-container">
         <img src={post.cover} alt="cover" className="cover" />
         <p className="card-points flex items-center border-[1px] border-[#F9B54C] rounded-[50px] px-2 py-1 w-fit">
@@ -21,7 +22,7 @@ const PostCard = (post) => {
       <p className="card-location flex items-center gap-[6px]">
         <MapPointerIcon /> {post.location.name}
       </p>
-    </div>
+    </Link>
   );
 };
 

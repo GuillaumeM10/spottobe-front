@@ -9,4 +9,29 @@
   .mapFilters .tag-container:last-child {
     margin-right: 20px;
   }
+
+  .searchBar {
+    margin: 28px;
+    box-shadow: none;
+  }
+
+  .filters-button {
+    margin-right: 78px;
+  }
+
+  .postSwiper {
+    .see-also {
+      margin-bottom: 13px;
+      max-width: calc(100% - 36px);
+
+      >.flex {
+        margin-bottom: 13px;
+        margin-top: 10px;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 130px;
+    }
+  }
 }

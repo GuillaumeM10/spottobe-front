@@ -2,8 +2,8 @@ import React from "react";
 
 const PointsPage = () => {
   return (
-    <div>
-      <h1>Points</h1>
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <h1 className="text-xl">WIP - comming soon</h1>
     </div>
   );
 };
