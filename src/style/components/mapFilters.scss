@@ -1,3 +1,6 @@
+$tag-popularite:#833DEF;
+$tag-nouveaute:#833DEF;
+
 .mapFilters {
   display: flex;
   flex-wrap: nowrap;
@@ -6,7 +9,7 @@
   overflow-x: auto;
   cursor: grab;
   user-select: none;
-  
+
   &.dragging {
     cursor: grabbing;
     scroll-behavior: auto;
@@ -29,19 +32,55 @@
     box-shadow: 0px 2.145px 4.29px 0px rgba(173, 175, 187, 0.30);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    
+
     &.active {
       background-color: #f0f0f0;
-      border-color: #d0d0d0;
+    }
+
+    svg {
+      height: 25px;
     }
   }
 
   &::-webkit-scrollbar {
     display: none;
   }
+
   &::-webkit-scrollbar-thumb {
     background: transparent;
   }
+
   scrollbar-width: none;
   -ms-overflow-style: none;
+
+  &.under {
+    .tag {
+      padding: 16px;
+      width: fit-content;
+      aspect-ratio: 1/1;
+      justify-content: center;
+      height: 62px;
+    }
+
+    .tag-name {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .tag-popularite path,
+    .tag-nouveaute path {
+      fill: $tag-popularite;
+      stroke: $tag-popularite;
+    }
+  }
 }

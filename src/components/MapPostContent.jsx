@@ -1,15 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { dateFormatter } from "../services/generalFunctions";
 
 const MapPostContent = ({ post, setSelectedPost }) => {
   const handleClose = () => {
     setSelectedPost(null);
-  };
-
-  const dateFormatter = (dateString) => {
-    const date = new Date(dateString);
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    return date.toLocaleDateString("fr-FR", options);
   };
 
   return (

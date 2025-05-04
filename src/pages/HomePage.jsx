@@ -21,6 +21,7 @@ import L from "leaflet";
 import { renderToString } from "react-dom/server";
 import { useState } from "react";
 import MapPostContent from "../components/MapPostContent";
+import { formatTag } from "../services/generalFunctions";
 
 const HomePage = () => {
   const { posts } = useContext(AppContext);
@@ -58,8 +59,7 @@ const HomePage = () => {
 
     const svgString = getIconForTag(tag);
     if (!svgString) return new L.Icon.Default();
-    let tagClass = tag.toLowerCase().replace(/\s+/g, "-");
-    tagClass = tagClass.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    let tagClass = formatTag(tag);
 
     return L.divIcon({
       html: svgString,
@@ -77,7 +77,11 @@ const HomePage = () => {
     <div>
       <div className="search-container">
         <SearchBar setMapPosts={setMapPosts} mapPosts={posts} />
-        <MapFilters setMapPosts={setMapPosts} mapPosts={posts} />
+        <MapFilters
+          setMapPosts={setMapPosts}
+          mapPosts={posts}
+          displayNames={true}
+        />
       </div>
       <MapContainer
         center={[44.833328, -0.56667]}

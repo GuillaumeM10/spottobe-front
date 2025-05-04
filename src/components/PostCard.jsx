@@ -1,14 +1,9 @@
 import React from "react";
 import MapPointerIcon from "../assets/MapPointerIcon";
 import PointsIcon from "../assets/layout/PointsIcon";
+import { dateFormatter } from "../services/generalFunctions";
 
 const PostCard = (post) => {
-  const dateFormatter = (dateString) => {
-    const date = new Date(dateString);
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    return date.toLocaleDateString("fr-FR", options);
-  };
-
   return (
     <div className="postCard" key={post.id}>
       <div className="card-cover-container">

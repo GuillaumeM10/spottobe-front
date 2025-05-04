@@ -4,6 +4,9 @@ $tag-entre-amis:#00A64B;
 $tag-sport:#D76A03;
 $tag-concert:#F5BB00;
 $tag-festivals:#A870FF;
+$tag-popularite:#833DEF;
+$tag-nouveaute:#833DEF;
+
 
 #root {
   display: flex;
@@ -79,28 +82,44 @@ $tag-festivals:#A870FF;
   border-color: $tag-festivals;
 }
 
-.mapFilters .tag-data.active {
+.mapFilters .tag-data.active,
+.mapFilters.under .tag-data {
   border-color: $tag-date;
 }
 
-.mapFilters .tag-conferences.active {
+.mapFilters .tag-conferences.active,
+.mapFilters.under .tag-conferences {
   border-color: $tag-conference;
 }
 
-.mapFilters .tag-entre-amis.active {
+.mapFilters .tag-entre-amis.active,
+.mapFilters.under .tag-entre-amis {
   border-color: $tag-entre-amis;
 }
 
-.mapFilters .tag-sport.active {
+.mapFilters .tag-sport.active,
+.mapFilters.under .tag-sport {
   border-color: $tag-sport;
 }
 
-.mapFilters .tag-concert.active {
+.mapFilters .tag-concert.active,
+.mapFilters.under .tag-concert {
   border-color: $tag-concert;
 }
 
-.mapFilters .tag-festivals.active {
+.mapFilters .tag-festivals.active,
+.mapFilters.under .tag-festivals {
   border-color: $tag-festivals;
+}
+
+.mapFilters .tag-popularite.active,
+.mapFilters.under .tag-popularite {
+  border-color: $tag-popularite;
+}
+
+.mapFilters .tag-nouveaute.active,
+.mapFilters.under .tag-nouveaute {
+  border-color: $tag-nouveaute;
 }
 
 .singleEventPage .tag {
@@ -151,4 +170,15 @@ $tag-festivals:#A870FF;
   &.tag-festivals .circle {
     background-color: $tag-festivals;
   }
+}
+
+.me {
+  img {
+    border-radius: 100px;
+  }
+}
+
+.header-me {
+  padding: 0 38.5px;
+  margin: 30px 0 15px 0;
 }

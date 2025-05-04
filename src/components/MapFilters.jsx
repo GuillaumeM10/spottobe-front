@@ -6,8 +6,17 @@ import ConferenceIcon from "../assets/tags/ConferenceIcon";
 import EntreAmisIcon from "../assets/tags/EntreAmisIcon";
 import SportIcon from "../assets/tags/SportIcon";
 import FestivalsIcon from "../assets/tags/FestivalsIcon";
+import { formatTag } from "../services/generalFunctions";
+import PopulariteIcon from "../assets/tags/PopulariteIcon";
+import NouveauteIcon from "../assets/tags/NouveauteIcon";
 
-const MapFilters = ({ mapPosts, setMapPosts }) => {
+const MapFilters = ({
+  mapPosts,
+  setMapPosts,
+  displayNames,
+  namesPlace,
+  generalTags,
+}) => {
   const { tags } = useContext(AppContext);
   const [activeTag, setActiveTag] = useState(null);
   const filtersRef = useRef(null);
@@ -16,6 +25,7 @@ const MapFilters = ({ mapPosts, setMapPosts }) => {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [mouseDownPosition, setMouseDownPosition] = useState(null);
   const dragThreshold = 5;
+  generalTags = generalTags || false;
 
   const handleTagClick = (tag) => {
     if (activeTag === tag) {
@@ -84,32 +94,68 @@ const MapFilters = ({ mapPosts, setMapPosts }) => {
 
   return (
     <div
-      className={`mapFilters ${isDragging ? "dragging" : ""}`}
+      className={`mapFilters ${isDragging ? "dragging" : ""} ${
+        namesPlace == "under" ? "under" : ""
+      }`}
       ref={filtersRef}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseLeave={() => isDragging && setIsDragging(false)}
     >
+      {generalTags && (
+        <>
+          <div className="tag-container">
+            <button
+              className={`tag tag-popularite ${
+                activeTag === "popularite" ? "active" : ""
+              }`}
+              onClick={(e) => handleTagButtonClick(e, "popularite")}
+            >
+              <PopulariteIcon />
+            </button>
+            {displayNames && namesPlace === "under" && (
+              <p className={`tag-name tag-general`}>Popularite</p>
+            )}
+          </div>
+          <div className="tag-container">
+            <button
+              className={`tag tag-nouveaute ${
+                activeTag === "nouveaute" ? "active" : ""
+              }`}
+              onClick={(e) => handleTagButtonClick(e, "nouveaute")}
+            >
+              <NouveauteIcon />
+            </button>
+            {displayNames && namesPlace === "under" && (
+              <p className={`tag-name tag-general`}>Nouveauté</p>
+            )}
+          </div>
+        </>
+      )}
       {tags.map((tag, index) => {
-        let tagClass = tag.toLowerCase().replace(/\s+/g, "-");
-        tagClass = tagClass.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        let tagClass = formatTag(tag);
 
         return (
-          <button
-            className={`tag tag-${tagClass} ${
-              activeTag === tag ? "active" : ""
-            }`}
-            key={index}
-            onClick={(e) => handleTagButtonClick(e, tag)}
-          >
-            {tag === "Data" && <DateIcon />}
-            {tag === "Conférences" && <ConferenceIcon />}
-            {tag === "Entre amis" && <EntreAmisIcon />}
-            {tag === "Sport" && <SportIcon />}
-            {tag === "Concert" && <ConcertIcon />}
-            {tag === "Festivals" && <FestivalsIcon />}
-            {tag}
-          </button>
+          <div className="tag-container" key={index}>
+            <button
+              className={`tag tag-${tagClass} ${
+                activeTag === tag ? "active" : ""
+              }`}
+              key={index}
+              onClick={(e) => handleTagButtonClick(e, tag)}
+            >
+              {tag === "Data" && <DateIcon />}
+              {tag === "Conférences" && <ConferenceIcon />}
+              {tag === "Entre amis" && <EntreAmisIcon />}
+              {tag === "Sport" && <SportIcon />}
+              {tag === "Concert" && <ConcertIcon />}
+              {tag === "Festivals" && <FestivalsIcon />}
+              {displayNames && namesPlace !== "under" && tag}
+            </button>
+            {displayNames && namesPlace === "under" && (
+              <p className={`tag-name tag-${tagClass}`}>{tag}</p>
+            )}
+          </div>
         );
       })}
     </div>

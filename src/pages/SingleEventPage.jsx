@@ -7,10 +7,15 @@ import { Pagination } from "swiper/modules";
 import PointsIcon from "../assets/layout/PointsIcon";
 import CalandarIcon from "../assets/CalandarIcon";
 import MapPointerIcon from "../assets/MapPointerIcon";
-import PostCard from "../components/PostCard";
 import TicketIcon from "../assets/TicketIcon";
 import { useState } from "react";
 import PostSwiper from "../components/PostSwiper";
+import {
+  addToCalandar,
+  dateFormatter,
+  formatTag,
+  seeOnMaps,
+} from "../services/generalFunctions";
 
 const SingleEventPage = () => {
   const { posts } = useContext(AppContext);
@@ -20,10 +25,7 @@ const SingleEventPage = () => {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
-  console.log("post", post);
-
-  let tagClass = post.tags[0].toLowerCase().replace(/\s+/g, "-");
-  tagClass = tagClass.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  let tagClass = formatTag(post.tags[0]);
 
   useEffect(() => {
     if (!post) {
@@ -35,27 +37,6 @@ const SingleEventPage = () => {
   if (!post) {
     return <div>Chargement...</div>;
   }
-
-  const dateFormatter = (dateString) => {
-    const date = new Date(dateString);
-    const options = { year: "numeric", month: "long", day: "numeric" };
-    return date.toLocaleDateString("fr-FR", options);
-  };
-
-  const handleAddToCalandar = (date) => {
-    const startDate = new Date(date.start)
-      .toISOString()
-      .replace(/-|:|\.\d+/g, "");
-    const endDate = new Date(date.end).toISOString().replace(/-|:|\.\d+/g, "");
-
-    const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startDate}/${endDate}&text=${post.title}&details=${post.content}`;
-    window.open(url, "_blank");
-  };
-
-  const handleSeeOnMaps = (latitude, longitude) => {
-    const url = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
-    window.open(url, "_blank");
-  };
 
   return (
     <div className="singleEventPage">
@@ -69,26 +50,34 @@ const SingleEventPage = () => {
           <img src={post.cover} alt="cover" className="cover" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={post.cover} alt="cover" className="cover" />
+          <img
+            src="https://picsum.photos/1280/720?random=5&cover"
+            alt="cover"
+            className="cover"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={post.cover} alt="cover" className="cover" />
+          <img
+            src="https://picsum.photos/1280/720?random=9&cover"
+            alt="cover"
+            className="cover"
+          />
         </SwiperSlide>
       </Swiper>
 
       <div className="content">
         <h1 className="title">Single Event {id}</h1>
 
-        <di className="tags flex items-center gap-[6px]">
+        <div className="tags flex items-center gap-[6px]">
           <p className={`tag tag-${tagClass}`}>
             <span className="circle"></span> {post.tags[0]}
           </p>
           <p className="points flex items-center border-[1px] border-[#F9B54C] rounded-[50px] px-2 py-1 w-fit">
             +{post.points} <PointsIcon />{" "}
           </p>
-        </di>
+        </div>
 
-        <div className="px-[40px] mt-3">
+        <div className="px-[40px] mt-3 mb-8">
           <div className="participants flex items-center">
             <div className="pps flex">
               <img src="https://picsum.photos/720/720?random=18&cover" alt="" />
@@ -110,7 +99,7 @@ const SingleEventPage = () => {
               {post.content} {post.content} {post.content}{" "}
               <input type="checkbox" hidden id="read-more" />
             </p>
-            <label for="read-more" className="read-more">
+            <label htmlFor="read-more" className="read-more">
               <b>
                 <span className="plus">Plus</span>
                 <span className="moin">Moins</span>
@@ -130,10 +119,7 @@ const SingleEventPage = () => {
               </p>
               <p className="hours">15h30-22h00</p>
 
-              <button
-                className="btn"
-                onClick={() => handleAddToCalandar(post.date)}
-              >
+              <button className="btn" onClick={() => addToCalandar(post.date)}>
                 <CalandarIcon /> Ajouter à mon agenda
               </button>
             </div>
@@ -151,10 +137,7 @@ const SingleEventPage = () => {
               <button
                 className="btn"
                 onClick={() =>
-                  handleSeeOnMaps(
-                    post.location.latitude,
-                    post.location.longitude
-                  )
+                  seeOnMaps(post.location.latitude, post.location.longitude)
                 }
               >
                 <MapPointerIcon /> Voir sur google maps
@@ -211,7 +194,7 @@ const SingleEventPage = () => {
                 <div className="tarif-card">
                   <div className="">
                     <p>Pass 2 Jours VIP par pers.</p>
-                    <p className="price">{+post.price * 1.8}€</p>
+                    <p className="price">{(+post.price * 1.8).toFixed(2)}€</p>
                   </div>
                   <div className="add">
                     <button
