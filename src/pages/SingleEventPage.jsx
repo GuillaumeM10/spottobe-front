@@ -77,7 +77,7 @@ const SingleEventPage = () => {
           </p>
         </div>
 
-        <div className="px-[40px] mt-3 mb-8">
+        <div className="px-[20px] mt-6 mb-8">
           <div className="participants flex items-center">
             <div className="pps flex">
               <img src="https://picsum.photos/720/720?random=18&cover" alt="" />
